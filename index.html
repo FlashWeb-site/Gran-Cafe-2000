@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gran Café 2000 | Desayunos y Café de Especialidad en Jaén</title>
+    <meta name="description" content="El mejor café y desayunos de Jaén desde las 6:30h. Ambiente acogedor, tostadas tradicionales con AOVE y raciones.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/jpeg" href="logo.JPG">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="navbar container">
+            <a href="#" class="logo">GRAN CAFÉ <span>2000</span></a>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#nosotros" class="nav-link">Por qué elegirnos</a></li>
+                <li><a href="#carta" class="nav-link">Carta</a></li>
+                <li><a href="#opiniones" class="nav-link">Opiniones</a></li>
+                <li><a href="#contacto" class="nav-link">Horario y Ubicación</a></li>
+                <li><a href="https://maps.google.com/?q=C.+Salvador+Vicente+de+la+Torre,+6,+23005+Jaén" target="_blank" class="btn btn-primary btn-sm">Cómo Llegar</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content container">
+                <div class="badge-rating">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+                    <span><strong>4.7 / 5</strong> (+124 opiniones en Google)</span>
+                </div>
+                <h1>El mejor café y desayuno para empezar tu mañana en Jaén</h1>
+                <p>Abrierto desde las 6:30h para ofrecerte pan recién hecho, excelente café de especialidad y un trato cercano en un ambiente acogedor.</p>
+                <div class="hero-actions">
+                    <a href="#carta" class="btn btn-primary"><i class="fa-solid fa-mug-hot"></i> Ver Carta de Desayunos</a>
+                    <a href="https://maps.google.com/?q=C.+Salvador+Vicente+de+la+Torre,+6,+23005+Jaén" target="_blank" class="btn btn-secondary"><i class="fa-solid fa-location-dot"></i> Cómo Llegar</a>
+                </div>
+                <div class="hero-features">
+                    <span><i class="fa-solid fa-check"></i> Consumo en local</span>
+                    <span><i class="fa-solid fa-check"></i> Para llevar</span>
+                    <span><i class="fa-solid fa-check"></i> Accesibilidad total</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="nosotros" class="section highlights">
+            <div class="container">
+                <div class="section-title">
+                    <h2>¿Por qué empezar tu día con nosotros?</h2>
+                    <p>Calidad, rapidez y el mejor ambiente desde primera hora de la mañana.</p>
+                </div>
+                <div class="grid grid-4">
+                    <div class="card-feature">
+                        <div class="icon-box"><i class="fa-solid fa-mug-saucer"></i></div>
+                        <h3>Café de Especialidad</h3>
+                        <p>Seleccionado para lograr el equilibrio perfecto entre cuerpo, aroma y sabor en cada taza.</p>
+                    </div>
+                    <div class="card-feature">
+                        <div class="icon-box"><i class="fa-solid fa-clock"></i></div>
+                        <h3>Madrugamos Contigo</h3>
+                        <p>Abierto desde las 6:30 h de lunes a viernes para tus desayunos antes de ir a trabajar.</p>
+                    </div>
+                    <div class="card-feature">
+                        <div class="icon-box"><i class="fa-solid fa-bread-slice"></i></div>
+                        <h3>Productos Frescos</h3>
+                        <p>Pan crujiente al momento, aceite de oliva virgen extra de Jaén y tomatazo natural.</p>
+                    </div>
+                    <div class="card-feature">
+                        <div class="icon-box"><i class="fa-solid fa-users"></i></div>
+                        <h3>Ambiente Acogedor</h3>
+                        <p>Espacio accesible e informal ideal para familias, grupos o tu pausa diaria.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="carta" class="section menu-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Nuestra Carta Digital</h2>
+                    <p>Descubre nuestras especialidades elaboradas con ingredientes locales de primera calidad.</p>
+                </div>
+
+                <div class="menu-tabs">
+                    <button class="tab-btn active" data-category="cafes"><i class="fa-solid fa-coffee"></i> Cafés e Infusiones</button>
+                    <button class="tab-btn" data-category="tostadas"><i class="fa-solid fa-bread-slice"></i> Tostadas y Desayunos</button>
+                    <button class="tab-btn" data-category="tapas"><i class="fa-solid fa-utensils"></i> Raciones y Tapas</button>
+                    <button class="tab-btn" data-category="bebidas"><i class="fa-solid fa-glass-water"></i> Bebidas</button>
+                </div>
+
+                <div class="menu-content">
+                    <div class="menu-category active" id="cafes">
+                        <div class="grid grid-2">
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4>Café Solo / Espresso</h4>
+                                    <span class="price">1,30 €</span>
+                                </div>
+                                <p>100% arábica de tueste natural con cuerpo intenso.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4>Café con Leche</h4>
+                                    <span class="price">1,40 €</span>
+                                </div>
+                                <p>Servido a tu gusto (entera, desnatada, sin lactosa o avena).</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4>Cappuccino Cremoso</h4>
+                                    <span class="price">2,00 €</span>
+                                </div>
+                                <p>Espresso denso con abundante espuma de leche y espolvoreado de cacao.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4>Carajillo Tradicional</h4>
+                                    <span class="price">2,20 €</span>
+                                </div>
+                                <p>Café recién hecho flameado con el licor de tu elección.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4>Selección de Tés e Infusiones</h4>
+                                    <span class="price">1,50 €</span>
+                                </div>
+                                <p>Té verde, té negro, manzanilla, menta poleo y frutos rojos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-category" id="tostadas">
+                        <div class="grid grid-2">
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4>Tostada Tradicional con AOVE</h4>
+                                    <span class="price">1,80 €</span>
+                                </div>
+                                <p>Pan crujiente con Aceite de Oliva Virgen Extra de la tierra de Jaén.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4>Tostada de Tomate y Jamón Serrano</h4>
+                                    <span class="price">2,80 €</span>
+                                </div>
+                                <p>Pan artesano, tomate triturado natural, AOVE y jamón serrano curado.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4>Tostada Dulce de Mantequilla y Mermelada</h4>
+                                    <span class="price">2,00 €</span>
+                                </div>
+                                <p>Servida con mantequilla de alta calidad y mermelada a elegir (fresa/albaricoque).</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4>Especialidad Gran Café 2000</h4>
+                                    <span class="price">3,50 €</span>
+                                </div>
+                                <p>Pan de pueblo tostado, lomo al ajillo, queso fundido y un toque de AOVE.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-category" id="tapas">
+                        <div class="grid grid-2">
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4>Pincho de Tortilla Española</h4>
+                                    <span class="price">2,50 €</span>
+                                </div>
+                                <p>Jugosa tortilla casera de patatas elaborada diariamente.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4>Montadito de Lomo de Orza</h4>
+                                    <span class="price">2,80 €</span>
+                                </div>
+                                <p>Receta tradicional en conserva artesanal de aceite.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4>Ración de Queso Curado</h4>
+                                    <span class="price">6,00 €</span>
+                                </div>
+                                <p>Queso de oveja acompañado de picos artesanos.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4>Variado de Salazones y Chacinas</h4>
+                                    <span class="price">7,50 €</span>
+                                </div>
+                                <p>Ideal para compartir a media mañana o al mediodía.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-category" id="bebidas">
+                        <div class="grid grid-2">
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4>Zumo de Naranja Natural</h4>
+                                    <span class="price">2,20 €</span>
+                                </div>
+                                <p>Recién exprimido con naranjas seleccionadas.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4>Refrescos Variados (33cl)</h4>
+                                    <span class="price">1,80 €</span>
+                                </div>
+                                <p>Coca-Cola, Fanta, Aquarius, Nestea.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4>Cerveza Nacional / Caña bien fría</h4>
+                                    <span class="price">1,60 €</span>
+                                </div>
+                                <p>Servida con aperitivo o tapa del día.</p>
+                            </div>
+                            <div class="menu-item">
+                                <div class="item-header">
+                                    <h4>Agua Mineral (50cl)</h4>
+                                    <span class="price">1,20 €</span>
+                                </div>
+                                <p>Con o sin gas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="opiniones" class="section reviews">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Lo que dicen nuestros clientes</h2>
+                    <p>Más de 124 opiniones avalan nuestro compromiso con la calidad y el buen servicio.</p>
+                </div>
+                <div class="grid grid-3">
+                    <div class="card-review">
+                        <div class="stars">★★★★★</div>
+                        <p>"El mejor café de Jaén sin duda. Las tostadas con tomate y aceite local son espectaculares. El personal es muy amable y rápido, ideal cuando vas con el tiempo justo."</p>
+                        <div class="review-author">
+                            <strong>Manuel Gómez</strong>
+                            <span>Cliente habitual</span>
+                        </div>
+                    </div>
+                    <div class="card-review">
+                        <div class="stars">★★★★★</div>
+                        <p>"Excelente sitio para desayunar. Abre súper temprano a las 6:30 h, lo cual se agradece muchísimo si trabajas cerca. La atención de 10."</p>
+                        <div class="review-author">
+                            <strong>María del Carmen R.</strong>
+                            <span>Opinión en Google</span>
+                        </div>
+                    </div>
+                    <div class="card-review">
+                        <div class="stars">★★★★★</div>
+                        <p>"Local muy acogedor e impecable. Espacioso, accesible para carrito de bebé y con un ambiente familiar estupendo. Volveré seguro."</p>
+                        <div class="review-author">
+                            <strong>David Fernández</strong>
+                            <span>Cliente local</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section contact">
+            <div class="container">
+                <div class="grid grid-2 alignment-center">
+                    <div class="contact-info">
+                        <h2>Ven a visitarnos</h2>
+                        <p>Te esperamos para ofrecerte el mejor desayuno de la ciudad.</p>
+                        
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <h4>Ubicación</h4>
+                                <p>C. Salvador Vicente de la Torre, 6, 23005 Jaén</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <div>
+                                <h4>Horario de Apertura</h4>
+                                <ul class="schedule-list">
+                                    <li><span>Lunes a Viernes:</span> <strong>06:30 - 12:30 h</strong></li>
+                                    <li><span>Sábados:</span> <strong>07:00 - 12:00 h</strong></li>
+                                    <li><span>Domingos:</span> <strong>Cerrado por descanso</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <i class="fa-solid fa-credit-card"></i>
+                            <div>
+                                <h4>Métodos de Pago</h4>
+                                <p>Efectivo, Tarjeta de crédito/débito y Pago móvil (NFC)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-map">
+                        <div class="map-container">
+                            <iframe 
+                                title="Ubicación Gran Café 2000"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2651.814325821871!2d-3.8012177213984883!3d37.776996903153915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6dd7112824507d%3A0x853afd28baf02f73!2sGRAN%20CAFE%202000!5e0!3m2!1ses!2ses!4v1787601014008!5m2!1ses!2ses" 
+                                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h3>GRAN CAFÉ 2000</h3>
+                <p>Tu cafetería de confianza para desayunar y disfrutar de la mañana en Jaén.</p>
+            </div>
+            <div class="footer-social">
+                <h4>Síguenos</h4>
+                <a href="https://facebook.com/gran-cafe-2000-1876909415958395" target="_blank" aria-label="Facebook">
+                    <i class="fa-brands fa-facebook-f"></i> Síguenos en Facebook
+                </a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 GRAN CAFÉ 2000. Todos los derechos reservados. | <strong>Desarrollado por FlashWeb</strong></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
